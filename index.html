@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Trust API - Military-Grade Image Sanitization</title>
+    <meta name="description" content="The only API that treats every image as a threat. Complete Content Disarm & Reconstruction for images.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">Zero Trust API</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#docs">Documentation</a>
+                <a href="https://rapidapi.com/anonymous617461746174/api/zero-trust-api" class="nav-cta" target="_blank">Get API Key</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🔒 Content Disarm & Reconstruction</div>
+            <h1>Never Trust an Image.<br><span class="gradient-text">Sanitize Everything.</span></h1>
+            <p class="hero-subtitle">The only API that completely destroys and rebuilds images from raw pixels. Military-grade protection against hidden threats, metadata leaks, and malicious payloads.</p>
+            <div class="hero-buttons">
+                <a href="https://rapidapi.com/anonymous617461746174/api/zero-trust-api" class="btn-primary" target="_blank">
+                    <span>Start Free Trial</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="#how-it-works" class="btn-secondary">
+                    <span>See How It Works</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">500+</span>
+                    <span class="stat-label">Free Requests/Month</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">&lt;100ms</span>
+                    <span class="stat-label">Average Response</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">99.9%</span>
+                    <span class="stat-label">Uptime SLA</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="code-title">Terminal</span>
+                </div>
+                <pre class="code-content"><code><span class="code-prompt">$</span> curl -X POST <span class="code-string">'https://zero-trust-api.p.rapidapi.com/'</span> \
+  -H <span class="code-string">'Content-Type: image/jpeg'</span> \
+  -H <span class="code-string">'x-rapidapi-key: YOUR_KEY'</span> \
+  --data-binary <span class="code-string">@untrusted.jpg</span> \
+  --output <span class="code-keyword">sanitized.png</span>
+
+<span class="code-success">✓ Image sanitized successfully</span>
+<span class="code-comment"># All metadata stripped</span>
+<span class="code-comment"># Hidden data destroyed</span>
+<span class="code-comment"># Clean PNG output</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-section">
+        <div class="container">
+            <p class="trust-label">Trusted Technology Stack</p>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span>🦀</span> Rust
+                </div>
+                <div class="trust-badge">
+                    <span>⚡</span> WebAssembly
+                </div>
+                <div class="trust-badge">
+                    <span>☁️</span> Cloudflare Workers
+                </div>
+                <div class="trust-badge">
+                    <span>🔐</span> Zero-Trust Architecture
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">The Problem</span>
+                <h2>Every Image Is a Potential Threat</h2>
+                <p>User-uploaded images can contain hidden dangers that traditional validation misses.</p>
+            </div>
+            <div class="threat-grid">
+                <div class="threat-card">
+                    <div class="threat-icon">📍</div>
+                    <h3>Location Leaks</h3>
+                    <p>GPS coordinates embedded in EXIF data expose user locations and create privacy violations.</p>
+                </div>
+                <div class="threat-card">
+                    <div class="threat-icon">🕵️</div>
+                    <h3>Steganography</h3>
+                    <p>Hidden data encoded within pixel values can exfiltrate sensitive information undetected.</p>
+                </div>
+                <div class="threat-card">
+                    <div class="threat-icon">💣</div>
+                    <h3>Image Bombs</h3>
+                    <p>Specially crafted files that expand to consume memory and crash image processors.</p>
+                </div>
+                <div class="threat-card">
+                    <div class="threat-icon">🎭</div>
+                    <h3>Polyglot Files</h3>
+                    <p>Files valid as both images and executables that bypass security controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">The Solution</span>
+                <h2>Complete Content Disarm & Reconstruction</h2>
+                <p>We don't just strip metadata—we completely destroy and rebuild every image.</p>
+            </div>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📥</div>
+                    <h3>Input</h3>
+                    <p>Receive untrusted image (JPEG, PNG, GIF, WebP)</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🔬</div>
+                    <h3>Decode</h3>
+                    <p>Validate format and extract raw pixel data only</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step destructive">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">💥</div>
+                    <h3>Destroy</h3>
+                    <p>Original container completely discarded</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">✨</div>
+                    <h3>Rebuild</h3>
+                    <p>Create sterile PNG from raw pixels</p>
+                </div>
+                <div class="process-arrow">→</div>
+                <div class="process-step safe">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">✅</div>
+                    <h3>Output</h3>
+                    <p>Guaranteed safe, metadata-free image</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2>Enterprise-Grade Security</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🦀</div>
+                    <h3>Rust-Powered</h3>
+                    <p>Memory-safe processing eliminates buffer overflow vulnerabilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>WASM Sandboxed</h3>
+                    <p>WebAssembly isolation prevents any escape from the processing environment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Edge Deployed</h3>
+                    <p>200+ global locations via Cloudflare for ultra-low latency responses.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Zero Logging</h3>
+                    <p>Images are never stored. Processing happens in memory only.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>DoS Protected</h3>
+                    <p>Hard limits on dimensions (4096px) and memory (80MB) prevent abuse.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Compliance Ready</h3>
+                    <p>Helps meet GDPR, HIPAA, and SOX requirements for image handling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Examples -->
+    <section class="code-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Integration</span>
+                <h2>Works With Your Stack</h2>
+            </div>
+            <div class="code-tabs">
+                <button class="code-tab active" data-lang="curl">cURL</button>
+                <button class="code-tab" data-lang="nodejs">Node.js</button>
+                <button class="code-tab" data-lang="python">Python</button>
+            </div>
+            <div class="code-examples">
+                <div class="code-example active" id="curl">
+                    <pre><code>curl -X POST 'https://zero-trust-api.p.rapidapi.com/' \
+  -H 'x-rapidapi-key: YOUR_API_KEY' \
+  -H 'x-rapidapi-host: zero-trust-api.p.rapidapi.com' \
+  -H 'Content-Type: image/jpeg' \
+  --data-binary @input.jpg \
+  --output sanitized.png</code></pre>
+                </div>
+                <div class="code-example" id="nodejs">
+                    <pre><code>const axios = require('axios');
+const fs = require('fs');
+
+const imageBuffer = fs.readFileSync('input.jpg');
+
+const response = await axios.post(
+  'https://zero-trust-api.p.rapidapi.com/',
+  imageBuffer,
+  {
+    headers: {
+      'x-rapidapi-key': 'YOUR_API_KEY',
+      'x-rapidapi-host': 'zero-trust-api.p.rapidapi.com',
+      'Content-Type': 'image/jpeg'
+    },
+    responseType: 'arraybuffer'
+  }
+);
+
+fs.writeFileSync('sanitized.png', response.data);</code></pre>
+                </div>
+                <div class="code-example" id="python">
+                    <pre><code>import requests
+
+with open('input.jpg', 'rb') as f:
+    image_data = f.read()
+
+response = requests.post(
+    'https://zero-trust-api.p.rapidapi.com/',
+    headers={
+        'x-rapidapi-key': 'YOUR_API_KEY',
+        'x-rapidapi-host': 'zero-trust-api.p.rapidapi.com',
+        'Content-Type': 'image/jpeg'
+    },
+    data=image_data
+)
+
+with open('sanitized.png', 'wb') as f:
+    f.write(response.content)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Start free, scale as you grow.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="amount">$0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 500 requests/month</li>
+                        <li>✓ All image formats</li>
+                        <li>✓ Full CDR processing</li>
+                        <li>✓ Community support</li>
+                    </ul>
+                    <a href="https://rapidapi.com/anonymous617461746174/api/zero-trust-api" class="pricing-btn" target="_blank">Get Started Free</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="amount">$49</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 100,000 requests/month</li>
+                        <li>✓ All image formats</li>
+                        <li>✓ Full CDR processing</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ 99.9% SLA</li>
+                    </ul>
+                    <a href="https://rapidapi.com/anonymous617461746174/api/zero-trust-api" class="pricing-btn primary" target="_blank">Subscribe Now</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">Custom</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited requests</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ Custom SLA</li>
+                        <li>✓ On-premise option</li>
+                        <li>✓ Custom integrations</li>
+                    </ul>
+                    <a href="mailto:contact@zerotrust-api.com" class="pricing-btn">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Secure Your Image Pipeline?</h2>
+            <p>Start protecting your users today with military-grade image sanitization.</p>
+            <a href="https://rapidapi.com/anonymous617461746174/api/zero-trust-api" class="btn-primary large" target="_blank">
+                <span>Get Your API Key Free</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🛡️</span>
+                        <span class="logo-text">Zero Trust API</span>
+                    </div>
+                    <p>Military-grade image sanitization for the modern web.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#docs">Documentation</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://rapidapi.com/anonymous617461746174/api/zero-trust-api" target="_blank">API Reference</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Changelog</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Zero Trust API. Built with Rust & Cloudflare Workers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
