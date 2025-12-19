@@ -830,3 +830,159 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* World's First Banner */
+.worlds-first-section {
+    padding: 60px 0;
+}
+
+.worlds-first-banner {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 20px;
+    padding: 48px;
+    text-align: center;
+}
+
+.worlds-first-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #6366f1 0%, #10b981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.worlds-first-banner p {
+    color: #9ca3af;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.worlds-first-banner strong {
+    color: #ffffff;
+}
+
+/* Integrate Section */
+.integrate-section {
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Copy Button */
+.copy-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #9ca3af;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.code-example {
+    position: relative;
+}
+
+/* 4-column pricing grid override */
+.pricing-section .pricing-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+}
+
+@media (max-width: 1024px) {
+    .pricing-section .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-section .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+}
+
+/* Floating Buttons */
+.floating-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.floating-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+}
+
+.floating-btn.feedback {
+    background: linear-gradient(135deg, #6366f1 0%, #10b981 100%);
+}
+
+.floating-btn.contact {
+    background: linear-gradient(135deg, #00d4ff 0%, #6366f1 100%);
+}
+
+/* Nav Integrate Button */
+.nav-integrate {
+    background: rgba(16, 185, 129, 0.1) !important;
+    border: 1px solid rgba(16, 185, 129, 0.3) !important;
+    color: #10b981 !important;
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+}
+
+.nav-integrate:hover {
+    background: rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Nav Feedback */
+.nav-feedback {
+    color: #f59e0b !important;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Code tabs responsive */
+@media (max-width: 768px) {
+    .code-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .code-tab {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+}

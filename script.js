@@ -67,3 +67,26 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(el);
     });
 });
+
+// Copy code function
+function copyCode(lang) {
+    const codeBlock = document.querySelector(`#${lang} pre code`);
+    const text = codeBlock.innerText;
+
+    navigator.clipboard.writeText(text).then(() => {
+        // Find the button and show feedback
+        const btn = document.querySelector(`#${lang} .copy-btn`);
+        const originalText = btn.innerText;
+        btn.innerText = '✅ Copied!';
+        btn.style.background = 'rgba(16, 185, 129, 0.3)';
+        btn.style.color = '#10b981';
+
+        setTimeout(() => {
+            btn.innerText = originalText;
+            btn.style.background = '';
+            btn.style.color = '';
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+    });
+}
