@@ -42,7 +42,7 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-badge">🌍 World's First Image CDR API</div>
-            <h1>Never Trust an Image.<br><span class="gradient-text">Sanitize Everything.</span></h1>
+            <h1>Never Trust an Image.<br><span class="gradient-text">Rebuild Everything.</span></h1>
             <p class="hero-subtitle">The <strong>world's first</strong> Content Disarm & Reconstruction API for images.
                 We completely destroy and rebuild images from raw pixels—military-grade protection against hidden
                 threats.</p>
@@ -87,9 +87,9 @@
   -H <span class="code-string">'Content-Type: image/jpeg'</span> \
   -H <span class="code-string">'x-rapidapi-key: YOUR_KEY'</span> \
   --data-binary <span class="code-string">@untrusted.jpg</span> \
-  --output <span class="code-keyword">sanitized.png</span>
+  --output <span class="code-keyword">rebuilt.png</span>
 
-<span class="code-success">✓ Image sanitized successfully</span>
+<span class="code-success">✓ Image rebuilt successfully</span>
 <span class="code-comment"># All metadata stripped</span>
 <span class="code-comment"># Hidden data destroyed</span>
 <span class="code-comment"># Clean PNG output</span></code></pre>
@@ -257,7 +257,7 @@
             <div class="section-header">
                 <span class="section-badge">How to Integrate</span>
                 <h2>Copy, Paste, and Go</h2>
-                <p>Get your API key from RapidAPI and start sanitizing images in minutes.</p>
+                <p>Get your API key from RapidAPI and start rebuilding images in minutes.</p>
                 <a href="https://rapidapi.com/anonymous617461746174/api/zero-trust-api" class="btn-primary"
                     target="_blank" style="margin-top: 20px;">Get Your Free API Key</a>
             </div>
@@ -286,8 +286,8 @@ const response = await fetch('https://zero-trust-api.p.rapidapi.com/', {
   body: file
 });
 
-const sanitizedBlob = await response.blob();
-const url = URL.createObjectURL(sanitizedBlob);
+const rebuiltBlob = await response.blob();
+const url = URL.createObjectURL(rebuiltBlob);
 document.getElementById('result').src = url;</code></pre>
                 </div>
                 <div class="code-example" id="nodejs">
@@ -311,8 +311,8 @@ const response = await axios.post(
   }
 );
 
-fs.writeFileSync('sanitized.png', response.data);
-console.log('✅ Image sanitized!');</code></pre>
+fs.writeFileSync('rebuilt.png', response.data);
+console.log('✅ Image rebuilt!');</code></pre>
                 </div>
                 <div class="code-example" id="python">
                     <div class="copy-btn" onclick="copyCode('python')">📋 Copy</div>
@@ -332,9 +332,9 @@ response = requests.post(
     data=image_data
 )
 
-with open('sanitized.png', 'wb') as f:
+with open('rebuilt.png', 'wb') as f:
     f.write(response.content)
-print('✅ Image sanitized!')</code></pre>
+print('✅ Image rebuilt!')</code></pre>
                 </div>
                 <div class="code-example" id="java">
                     <div class="copy-btn" onclick="copyCode('java')">📋 Copy</div>
@@ -357,18 +357,18 @@ HttpRequest request = HttpRequest.newBuilder()
 HttpResponse&lt;byte[]&gt; response = client.send(request, 
     HttpResponse.BodyHandlers.ofByteArray());
 
-Files.write(Path.of("sanitized.png"), response.body());
-System.out.println("✅ Image sanitized!");</code></pre>
+Files.write(Path.of("rebuilt.png"), response.body());
+System.out.println("✅ Image rebuilt!");</code></pre>
                 </div>
                 <div class="code-example" id="react">
                     <div class="copy-btn" onclick="copyCode('react')">📋 Copy</div>
                     <pre><code>// React Component
 import { useState } from 'react';
 
-function ImageSanitizer() {
+function ImageRebuilder() {
   const [result, setResult] = useState(null);
 
-  const sanitizeImage = async (e) => {
+  const rebuildImage = async (e) => {
     const file = e.target.files[0];
     
     const response = await fetch('https://zero-trust-api.p.rapidapi.com/', {
@@ -387,8 +387,8 @@ function ImageSanitizer() {
 
   return (
     &lt;div&gt;
-      &lt;input type="file" accept="image/*" onChange={sanitizeImage} /&gt;
-      {result && &lt;img src={result} alt="Sanitized" /&gt;}
+      &lt;input type="file" accept="image/*" onChange={rebuildImage} /&gt;
+      {result && &lt;img src={result} alt="Rebuilt" /&gt;}
     &lt;/div&gt;
   );
 }</code></pre>
@@ -401,9 +401,9 @@ curl -X POST 'https://zero-trust-api.p.rapidapi.com/' \
   -H 'x-rapidapi-host: zero-trust-api.p.rapidapi.com' \
   -H 'Content-Type: image/jpeg' \
   --data-binary @input.jpg \
-  --output sanitized.png
+  --output rebuilt.png
 
-echo "✅ Image sanitized!"</code></pre>
+echo "✅ Image rebuilt!"</code></pre>
                 </div>
             </div>
         </div>
